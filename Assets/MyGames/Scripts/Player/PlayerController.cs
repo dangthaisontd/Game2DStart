@@ -74,6 +74,10 @@ public class PlayerController : MonoBehaviour
         scale.x *= -1;
         transform.localScale = scale;
     }
+    public bool GetFaceRight()
+    {
+        return facingRight;
+    }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
